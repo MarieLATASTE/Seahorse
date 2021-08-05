@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/09/19/14/02/seahorse-1680372_960_720.png" alt="seahorse">
+            <div class="text-container">
+                <h2>Seahorse</h2>
+                <p>Watch with glittering eyes the whole world around you because the greatest secrets are always hidden in the most unlikely places.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 20,
+            speed: 1000,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+    
+</body>
+</html>

@@ -9,7 +9,6 @@
 body{
     background: #161523;
 }
-
 .wrapper::before,
 .wrapper::after {
     content: '';

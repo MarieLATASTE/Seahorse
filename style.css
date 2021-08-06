@@ -12,11 +12,11 @@ body{
 .wrapper::before,
 .wrapper::after {
     content: '';
+    position: absolute;
     animation: orbit 5s linear infinite;
     border-radius: 50%;
     box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
     height: 150px;width: 150px;
-    position: absolute;
 }
 .wrapper::before {
     background: #ffe897;
@@ -58,10 +58,10 @@ body{
     border-radius: 50%;
     position: absolute;left: -50px;bottom: -90px;
     background: linear-gradient(45deg,#affbba,#551524,#affbba);
-
 }
+
 .card{
-    position: absolute;
+    position: relative;
     width: 100%;height: 100%;
     background: rgba(255,255,255,.06);
     border-radius: 1.2rem;
@@ -69,10 +69,11 @@ body{
     backdrop-filter: blur(10px);
 }
 .card img{
-    width: 60%;
+    width: 55%;
     position: absolute;right: -10px;bottom: 10px;
     animation: rotate 1.5s linear infinite;
 }
+
 @keyframes rotate {
     0%{
         filter: hue-rotate(0deg);
@@ -80,9 +81,10 @@ body{
         filter: hue-rotate(360deg);
     }
 }
+
 .text-container{
     position: absolute;left: 30px;
-    width: 50%;height: 100%;
+    width: 45%;height: 100%;
     display: flex;align-items: center;justify-content: center;
     flex-direction: column;
 }
@@ -99,3 +101,4 @@ body{
     letter-spacing: 0.2px;
     text-align: justify;
 }
+
